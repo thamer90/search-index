@@ -1,0 +1,25 @@
+{
+  "name": "search-index",
+  "version": "1.0.0",
+  "description": "A website with a search index",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thamer90/search-index.git"
+  },
+  "author": "Thamer Al-Merry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thamer90/search-index/issues"
+  },
+  "homepage": "https://github.com/thamer90/search-index#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
