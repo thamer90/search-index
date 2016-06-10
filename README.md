@@ -1,1 +1,2 @@
-# search-index - Search Index - Developed in Angular.js
+# search-index
+Search Index - Developed in Angular.js
