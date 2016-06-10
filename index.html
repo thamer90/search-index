@@ -9,15 +9,47 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>title</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css">
-  <link rel="stylesheet" href="css/style.min.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
   </head>
   <body ng-app="myApp">
 
+  <!-- Begin Top Wrapper -->
+  <div class="top-wrapper">
+      <div class="container">
+          Company Name
+      </div>
+  </div>
+
     <section class="container" ng-controller="SearchController">
-      {{ sites }}
-      <br />
-      {{ categories }}
-    </section>
+
+        <!-- Begin Middle Wrapper -->
+        <div class="middle-wrapper">
+            <input class="form-control custom" type="text" placeholder="Search Sites" ng-model="query" />
+            <ul class="site-list">
+              <li ng-repeat="site in sites | filter:search">
+                <span>{{site.siteUrl}}</span>
+                <p>{{site.description}}</p>
+              </li>
+            </ul>
+            <div class="no-results" ng-show="(sites | filter:query).length == 0">We currently don't have any results for your search, try another.</div>
+        </div>
+
+     </section>
+
+     <!-- Begin Bottom Wrapper -->
+     <footer class="bottom-wrapper">
+         <div class="container">
+             <div class="row text-center">
+                 <p>
+                     Company Logo
+                 </p>
+                 <hr />
+                 <p>
+                     &#169; 2016 Company Name | All Rights Reserved
+                 </p>
+             </div>
+         </div>
+     </footer>
 
   <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
   <script src="bower_components/angular/angular.min.js" type="text/javascript"></script>

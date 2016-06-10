@@ -1,3 +1,49 @@
 body {
-  background-color: #fff;
+  background-color: #f2f2f2;
+}
+
+/* wrapper styles */
+.top-wrapper {
+    background-color: #fff;
+    border-bottom: 1px solid #c7c7c7;
+    height: 50px;
+    margin-bottom: 35px;
+    padding-top: 12px;
+}
+.bottom-wrapper {
+    background-color: #2d2d2e;
+    color: #fff;
+    width: 100%;
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    padding-top: 15px;
+}
+
+/* list styles */
+.site-list {
+    font-size: 15px;
+    list-style: none;
+    padding: 15px 2px;
+}
+.site-list span {
+    color: #207fd1;
+    text-decoration: underline;
+}
+.site-list p {
+    color: #7d7d7d;
+}
+
+/* search box and no results */
+.custom {
+    padding: 30px 20px;
+    font-size: 20px;
+}
+.no-results {
+    border: 1px solid #d8d8d8;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 0 100px;
+    font-size: 17px;
+    color: #989898;
 }
